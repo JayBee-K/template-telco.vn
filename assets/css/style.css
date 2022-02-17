@@ -49,6 +49,30 @@ button {
     margin-top: 30px;
 }
 
+.row-g4 {
+    margin-top: calc(-1 * 40px);
+}
+
+.row-g4 > [class*=col] {
+    margin-top: 40px;
+}
+
+.row-g5 {
+    margin-top: calc(-1 * 50px);
+}
+
+.row-g5 > [class*=col] {
+    margin-top: 50px;
+}
+
+.row-g6 {
+    margin-top: calc(-1 * 60px);
+}
+
+.row-g6 > [class*=col] {
+    margin-top: 60px;
+}
+
 .row-25 {
     margin-left: -2.5px;
     margin-right: -2.5px;
@@ -104,7 +128,7 @@ body {
 }
 
 .section-gap {
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 .section-heading {
@@ -190,4 +214,158 @@ body {
 
 .article-card:hover .card-body .card-title {
     color: #1e4691;
+}
+
+.section-partner {
+    background: #f4f5f7;
+}
+
+.section-partner .partner-image {
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.footer .footer-top .footer-item {
+    margin: 20px 0;
+}
+
+.footer .footer-top .footer-item .footer-item_text {
+    font-weight: 600;
+    color: var(--dark-color);
+    font-size: 1.1em;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.footer .footer-top .footer-item .footer-item_text.footer-item_decor {
+    margin-bottom: 10px;
+}
+
+.footer .footer-top .footer-item .footer-item_text.footer-item_decor:before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 2px;
+    width: 50px;
+    background: var(--primary-color);
+    display: block;
+    content: '';
+    z-index: 2;
+}
+
+.footer .footer-top .footer-item .footer-item_text.footer-item_decor:after {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #dcdcdc;
+    display: block;
+    z-index: 1;
+    content: '';
+}
+
+.footer .footer-top .footer-item .footer-item_link,
+.footer .footer-top .footer-item .footer-item_link a {
+    color: var(--dark-color);
+}
+
+.footer .footer-top .footer-item .footer-item_link a:hover {
+    color: var(--primary-color);
+}
+
+.footer .footer-top .footer-item .footer-item_link + .footer-item_link {
+    margin-top: 15px;
+}
+
+.footer .footer-top .footer-item .footer-item_list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.footer .footer-top .footer-item .footer-item_list li a {
+    color: var(--dark-color);
+}
+
+.footer .footer-top .footer-item .footer-item_list li a:hover {
+    color: var(--primary-color);
+}
+
+.footer .footer-top .footer-item .footer-item_list li + li {
+    padding-top: 7.5px;
+    margin-top: 7.5px;
+    border-top: 1px solid #dcdcdc
+}
+
+.footer .footer-top .footer-item .footer-item_social {
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-top .footer-item .footer-item_social li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    color: var(--dark-color);
+}
+
+.footer .footer-top .footer-item .footer-item_social li a:hover {
+    color: var(--white);
+}
+
+.footer .footer-top .footer-item .footer-item_social li.facebook a:hover {
+    background: #3d5b99;
+}
+
+.footer .footer-top .footer-item .footer-item_social li.telegram a:hover {
+    background: #1f95d3;
+}
+
+.footer .footer-top .footer-item .footer-item_social li.twitter a:hover {
+    background: #00aced;
+}
+
+.footer .footer-top .footer-item .footer-item_social li.youtube a:hover {
+    background: #e64a41
+}
+
+.footer .footer-top .footer-item .footer-item_social li + li {
+    margin-left: 2px;
+}
+
+.footer .footer-bottom {
+    padding: 10px 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+.footer .footer-bottom .footer-bottom_copyright {
+    color: #7c7a7a;
+    font-size: .95em;
+}
+
+.footer .footer-bottom .footer-bottom_link {
+    display: inline-flex;
+    color: #7c7a7a;
+    font-size: .95em;
+}
+
+.footer .footer-bottom .footer-bottom_copyright:hover,
+.footer .footer-bottom .footer-bottom_link:hover {
+    color: #232323;
+}
+
+.footer .footer-bottom .footer-bottom_link.active {
+    color: var(--primary-color);
+}
+
+.footer .footer-bottom .footer-bottom_link + .footer-bottom_link {
+    margin-left: 8px;
 }
