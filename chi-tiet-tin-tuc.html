@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Template Telco</title>
+    <meta name="description" content="Template Telco">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Template Telco">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Telco">
+    <meta property="og:image" content="">
+
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+
+    <style>
+        :root {
+            --primary-color: #ea3023;
+            --dark-color: #363434;
+            --gray-color: #798594;
+            --transition: .3s all ease-in-out;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header-inner_logo">
+                        <a href="index.html" class="d-inline-block">
+                            <img class="img-fluid header-inner_logo__image" src="./assets/images/telco.png" alt="">
+                        </a>
+                        <div class="header-inner_hamburger d-block d-lg-none">
+                            <button type="button" class="no-animation" id="call-header_mobile">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div id="user-mobile" class="header-inner_mobile__user d-block d-lg-none">
+                            <a id="call-user_mobile" href="javascript:void(0)">
+                                <i class="fas fa-user"></i>
+                                Tài khoản
+                            </a>
+                            <div class="header-mobile_user__inner">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="logo d-block d-lg-none">
+                                        <a href="index.html">
+                                            <img src="./assets/images/telco.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dang-nhap.html">Đăng nhập</a>
+                                    </li>
+                                    <li>
+                                        <a href="dang-ky.html">Đăng ký</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Quên mật khẩu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 mobile-no_relative">
+                    <div class="d-lg-flex align-items-center justify-content-between flex-wrap">
+                        <div class="header-inner_nav">
+                            <ul class="list-unstyled mb-0" id="hasMenuTopUp">
+                                <li class="logo d-block d-lg-none">
+                                    <a href="index.html">
+                                        <img src="./assets/images/telco.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="bang-gia.html">
+                                        Bảng giá
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tin-tuc.html">
+                                        Tin tức
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="tin-tuc.html">
+                                                Tin tức
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tin-tuc.html">
+                                                Tin tức
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tin-tuc.html">
+                                                Tin tức
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-inner_user d-lg-flex align-items-center justify-content-end">
+                            <div class="header-inner_user__item d-none">
+                                <a href="dang-ky.html" class="btn btn-register">
+                                    <i class="fas fa-user mr-1"></i>
+                                    Đăng ký
+                                </a>
+                            </div>
+                            <div class="header-inner_user__item d-none">
+                                <a href="javascript:void(0)" class="btn btn-login">
+                                    <i class="fas fa-lock-alt mr-1"></i>
+                                    Đăng nhập
+                                </a>
+                            </div>
+                            <div class="header-inner_user__item">
+                                <span>
+                                    <i class="far fa-money-bill-alt mr-1"></i>
+                                    199.999 đ
+                                </span>
+                            </div>
+                            <div class="header-inner_user__item">
+                                <a href="javascript:void(0)" class="btn btn-login-outline">
+                                    <i class="fas fa-user mr-1"></i>
+                                    Tester
+                                </a>
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-angle-right"></i>
+                                            Thông tin tài khoản
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-angle-right"></i>
+                                            Quỹ số dư
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-angle-right"></i>
+                                            Kết nối API
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-angle-right"></i>
+                                            Lịch sử mua thẻ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-angle-right"></i>
+                                            Nạp quỹ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-angle-right"></i>
+                                            Rút quỹ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-overlay d-block d-lg-none" id="header-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main">
+    <div class="section-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="section-breadcrumb_inner">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Trang chủ</a>
+                            </li>
+                            <li class="breadcrumb-item active">Tin tức</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="detail-main">
+                        <h1 class="detail-title">
+                            Tuyển đại lý c1 gạch cước, nạp tiền Viettel, Vina, Mobi, Vietnammobi, FTTH, SMS Game
+                        </h1>
+                        <div class="detail-meta">
+                            <span>17:27</span>
+                            <span>04/01/2021</span>
+                            <span><i class="fas fa-eye"></i> 32877</span>
+                        </div>
+                        <div class="detail-content">
+                            <p><span style="color:#e74c3c"><strong>Hệ thống&nbsp;chuyên gạch cước, nạp tiền điện thoại&nbsp;Viettel,
+                                Vina, Mobi, Vietnammobi, thanh toán cước&nbsp;&nbsp;FTTH, Line, Metro,&nbsp;SMS
+                                Game...được chia ra làm 2 web:</strong></span></p>
+                            <p><span style="color:#2980b9"><strong>1. Napdienthoai .com&nbsp; (web không đua
+                                giá)</strong></span></p>
+                            <p>- Ưu điểm hệ thống :&nbsp;<br>
+                                Đơn úp lên xong ngay sau vài giây, tốc độ xử lý 1 phút.<br>
+                                Hệ thông dễ sử dụng, chỉ cần úp số lên là chạy<br>
+                                Không cần biết dùng web cước đều có thể sử dụng</p>
+                            <p>Có bán thẻ bảo lưu ck10%, Có&nbsp;chức năng tạo Đại lý cấp 2(cộng tác viên)&nbsp;và hưởng
+                                hoa hồng trực tiếp từ cấp 2</p>
+                            <p>- Nhược điểm: Khống có bắn tài khoản chính,&nbsp;Chỉ úp lẻ từng số không úp được list,
+                                ex...&nbsp;Chỉ chạy được mạng Viettel, Vina . Giá đắt hơn web đua giá, chỉ hỗ trợ nạp số
+                                dư&nbsp;qua tecombank.</p>
+                            <p>- Kết luận:&nbsp;Rất thích hợp mở tài khoản ctv sau đó cắt %&nbsp;cho các cửa hàng tạp
+                                hóa, các quán nước , quán ăn, dân văn phòng.....<br>
+                                Đặc biệt các chủ của hàng nhỏ đa phần là người nhiều tuổi sẽ không biết sử dụng web đua
+                                giá. Do đó web là sự lưa chọn thích hợp.</p>
+                            <p><span style="color:#2980b9"><strong>2. Trumcuoc .com (web đua giá )</strong></span></p>
+                            <p>- Ưu điểm hệ thống :</p>
+                            <p>Chạy được 4 nhà mạng, cho úp đơn theo list, ex...giá rẻ hơn web không đua giá, hỗ trợ nạp
+                                số dư 4 ngân hàng</p>
+                            <p>Có chức năng bắn tài khoán chính số dư ở sim cả&nbsp;3 mạng , có SMS game, có bán thẻ bảo
+                                lưu ck10%</p>
+                            <p>Có&nbsp;chức năng tạo Đại lý cấp 2(cộng tác viên)&nbsp;và hưởng hoa hồng trực tiếp từ cấp
+                                2</p>
+                            <p>- Nhược điểm: Phải đua giá đơn mới chạy, chức năng đua giá khó sử dụng, chỉ thích hợp cho
+                                đại lý biết dùng web đua giá.</p>
+                            <p>- Kết luận: Giá cực rẻ&nbsp;thích hợp cho đại lý cước trả sau, người thu cước trả sau,
+                                quản lý cước trả sau, cộng tác viên thu cước, điểm bán thẻ, của hàng điện thoại, nhân
+                                viên hoặc có người nhà làm ở nhà mạng, đại lý có đơn cước hàng tháng, biết sử dụng web
+                                đua giá.....</p>
+                            <p><strong>HƯỚNG DẪN ĐĂNG KÝ TÀI KHOẢN ĐẠI LÝ CẤP 1&nbsp;</strong></p>
+                            <p><strong>B1:</strong> Soạn tin nhắn : <strong>Web cần đăng ký&nbsp;+ SĐT</strong> gửi Zalo
+                                : <strong>0838.33.99.88</strong></p>
+                            <p><strong>B2</strong>: Nhân viên gửi lại tài khoản và mật khẩu đăng nhập</p>
+                            <p><strong>B3</strong>: Bạn vào web&nbsp;đăng nhập đổi mật khẩu&nbsp;</p>
+                            <p><br>
+                                <strong>HƯỚNG DẪN NẠP TIỀN&nbsp;</strong><br>
+                                - Bước 1: Vào web&nbsp;chọn mục NẠP TIỀN để lấy thông tin tài khoản ATM<br>
+                                - Bước 2: Chuyển khoản theo hướng dẫn, yêu cầu điền đúng nội dung chuyển tiền.<br>
+                                - Bước 3:&nbsp;Hiện tại TCB auto cộng số dư chỉ cần đúng nội dung KHÔNG cần đặt lệnh.
+                                Các ngân hàng khác đặt lệnh tại web mục nạp tiền sau đó liên hệ nhân viên Zalo:
+                                0838.33.99.88 để được duyệt lệnh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-4 mt-md-0">
+                    <div class="sidebar">
+                        <div class="sidebar-title">
+                            <i class="fas fa-newspaper mr-1"></i>
+                            Tin mới
+                        </div>
+                        <div class="sidebar-inner">
+                            <div class="sidebar-inner_item">
+                                <div class="row row-5">
+                                    <div class="col-sm-8">
+                                        <div class="sidebar-item_detail">
+                                            <div class="sidebar-item_detail__title">
+                                                <a href="">Hướng dẫn cấp lại mật khẩu, mật khẩu cấp 2, OTP, đăng ký tài
+                                                    khoản mới qua SMS
+                                                </a>
+                                            </div>
+                                            <div class="sidebar-item_detail__meta">
+                                                2022-02-18 19:49:21
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="sidebar-item_image">
+                                            <a href="">
+                                                <img src="./assets/images/article/bmc2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-inner_item">
+                                <div class="row row-5">
+                                    <div class="col-sm-8">
+                                        <div class="sidebar-item_detail">
+                                            <div class="sidebar-item_detail__title">
+                                                <a href="">Hướng dẫn cấp lại mật khẩu, mật khẩu cấp 2, OTP, đăng ký tài
+                                                    khoản mới qua SMS
+                                                </a>
+                                            </div>
+                                            <div class="sidebar-item_detail__meta">
+                                                2022-02-18 19:49:21
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="sidebar-item_image">
+                                            <a href="">
+                                                <img src="./assets/images/article/bmc2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-inner_item">
+                                <div class="row row-5">
+                                    <div class="col-sm-8">
+                                        <div class="sidebar-item_detail">
+                                            <div class="sidebar-item_detail__title">
+                                                <a href="">Hướng dẫn cấp lại mật khẩu, mật khẩu cấp 2, OTP, đăng ký tài
+                                                    khoản mới qua SMS
+                                                </a>
+                                            </div>
+                                            <div class="sidebar-item_detail__meta">
+                                                2022-02-18 19:49:21
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="sidebar-item_image">
+                                            <a href="">
+                                                <img src="./assets/images/article/bmc2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-inner_item">
+                                <div class="row row-5">
+                                    <div class="col-sm-8">
+                                        <div class="sidebar-item_detail">
+                                            <div class="sidebar-item_detail__title">
+                                                <a href="">Hướng dẫn cấp lại mật khẩu, mật khẩu cấp 2, OTP, đăng ký tài
+                                                    khoản mới qua SMS
+                                                </a>
+                                            </div>
+                                            <div class="sidebar-item_detail__meta">
+                                                2022-02-18 19:49:21
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="sidebar-item_image">
+                                            <a href="">
+                                                <img src="./assets/images/article/bmc2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-item">
+                                <div class="footer-item_text">
+                                    CÔNG TY TNHH NETPAY
+                                </div>
+                                <div class="footer-item_link">
+                                    Hotline:
+                                    <a href="tel:1900 1565">1900 1565</a>
+                                </div>
+                                <div class="footer-item_link">
+                                    Email:
+                                    <a href="mailto:nguyennghia@nencer.net">nguyennghia@nencer.net</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-6">
+                            <div class="footer-item">
+                                <div class="footer-item_text footer-item_decor">
+                                    CHÍNH SÁCH
+                                </div>
+                                <ul class="footer-item_list">
+                                    <li>
+                                        <a href="">Về chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Chính sách bảo mật</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Về chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Chính sách bảo mật</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-6">
+                            <div class="footer-item">
+                                <div class="footer-item_text footer-item_decor">
+                                    HƯỚNG DẪN
+                                </div>
+                                <ul class="footer-item_list">
+                                    <li>
+                                        <a href="">Về chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Chính sách bảo mật</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Về chúng tôi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-item">
+                                <div class="footer-item_text footer-item_decor">
+                                    CỘNG ĐỒNG
+                                </div>
+                                <ul class="list-unstyled mb-0 footer-item_social">
+                                    <li class="facebook">
+                                        <a href="https://www.facebook.com/">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="telegram">
+                                        <a href="https://telegram.com/">
+                                            <i class="fab fa-telegram-plane"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="https://twitter.com/">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="youtube">
+                                        <a href="https://www.youtube.com/">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#" class="footer-bottom_copyright">Software by Nencer Jsc.,</a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <a href="#" class="footer-bottom_link">English</a>
+                            <a href="#" class="footer-bottom_link active">Tiếng việt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/select2/js/select2.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>
