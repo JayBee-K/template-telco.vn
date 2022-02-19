@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Template Telco</title>
+    <meta name="description" content="Template Telco">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Template Telco">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Telco">
+    <meta property="og:image" content="">
+
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+
+    <style>
+        :root {
+            --primary-color: #ea3023;
+            --dark-color: #363434;
+            --gray-color: #798594;
+            --transition: .3s all ease-in-out;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header-inner_logo">
+                        <a href="index.html" class="d-inline-block">
+                            <img class="img-fluid header-inner_logo__image" src="./assets/images/telco.png" alt="">
+                        </a>
+                        <div class="header-inner_hamburger d-block d-lg-none">
+                            <button type="button" class="no-animation" id="call-header_mobile">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div id="user-mobile" class="header-inner_mobile__user d-block d-lg-none">
+                            <a id="call-user_mobile" href="javascript:void(0)">
+                                <i class="fas fa-user"></i>
+                                Tài khoản
+                            </a>
+                            <div class="header-mobile_user__inner">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="logo d-block d-lg-none">
+                                        <a href="index.html">
+                                            <img src="./assets/images/telco.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dang-nhap.html">Đăng nhập</a>
+                                    </li>
+                                    <li>
+                                        <a href="dang-ky.html">Đăng ký</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Quên mật khẩu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 mobile-no_relative">
+                    <div class="d-lg-flex align-items-center justify-content-between flex-wrap">
+                        <div class="header-inner_nav">
+                            <ul class="list-unstyled mb-0" id="hasMenuTopUp">
+                                <li class="logo d-block d-lg-none">
+                                    <a href="index.html">
+                                        <img src="./assets/images/telco.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="bang-gia.html">
+                                        Bảng giá
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mua-ma-the.html">
+                                        Mua mã thẻ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tin-tuc.html">
+                                        Tin tức
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="tin-tuc.html">
+                                                Tin tức
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tin-tuc.html">
+                                                Tin tức
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tin-tuc.html">
+                                                Tin tức
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-inner_user d-lg-flex align-items-center justify-content-end">
+                            <div class="header-inner_user__item d-none">
+                                <a href="dang-ky.html" class="btn btn-register">
+                                    <i class="fas fa-user mr-1"></i>
+                                    Đăng ký
+                                </a>
+                            </div>
+                            <div class="header-inner_user__item d-none">
+                                <a href="javascript:void(0)" class="btn btn-login">
+                                    <i class="fas fa-lock-alt mr-1"></i>
+                                    Đăng nhập
+                                </a>
+                            </div>
+                            <div class="header-inner_user__item">
+                                <span>
+                                    <i class="far fa-money-bill-alt mr-1"></i>
+                                    199.999 đ
+                                </span>
+                            </div>
+                            <div class="header-inner_user__item">
+                                <a href="javascript:void(0)" class="btn btn-login-outline">
+                                    <i class="fas fa-user mr-1"></i>
+                                    Tester
+                                </a>
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-angle-right"></i>
+                                            Thông tin tài khoản
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-angle-right"></i>
+                                            Quỹ số dư
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-angle-right"></i>
+                                            Kết nối API
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-angle-right"></i>
+                                            Lịch sử mua thẻ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-angle-right"></i>
+                                            Nạp quỹ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-angle-right"></i>
+                                            Rút quỹ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-overlay d-block d-lg-none" id="header-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main">
+    <div class="section-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="section-heading_title">
+                            Mua mã thẻ
+                        </div>
+                        <div class="section-heading_desc text-left">
+                            <p>Các loại thẻ cào điện thoại, thẻ game trực tuyến, hỗ trợ thanh toán bằng ví điện tử, các
+                                ngân hàng của Việt Nam, thẻ Visa/Master, Paypal, Coins, PM, Webmoney. Sau khi thanh toán
+                                thành công, thẻ sẽ đc trả ngay lập tức trên website và gửi vào điện chỉ email của bạn.
+                            </p>
+                            <p>Hãy đăng ký và xác thực tài khoản để nhận được nhiều ưu đãi. Dịch vụ của chúng tôi hỗ trợ
+                                24/7. Nếu có nhu cầu cần hỗ trợ vui lòng chát trực tiếp trên web hoặc gửi email liên hệ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 order-md-1 order-3 mt-3 mt-md-0">
+                            <div class="collapse-inner" id="collapse-theme">
+                                <div class="collapse-item">
+                                    <button class="btn collapse-button" type="button" data-toggle="collapse"
+                                            data-target="#thedt" aria-expanded="true">
+                                        <span>
+                                            <i class="fas fa-search"></i>
+                                            Thẻ điện thoại
+                                        </span>
+                                        <i class="fas fa-angle-down"></i>
+                                    </button>
+                                    <div class="collapse show active" id="thedt">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <a href=""><i class="fas fa-angle-right"></i>Thẻ Viettel</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href=""><i class="fas fa-angle-right"></i>Thẻ Vinaphone</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href=""><i class="fas fa-angle-right"></i>Thẻ Mobiphone</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    <i class="fas fa-angle-right"></i>
+                                                    Thẻ Vietnamobile
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href=""><i class="fas fa-angle-right"></i>Thẻ Gmobile</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href=""><i class="fas fa-angle-right"></i>Thẻ Gusu2</a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="collapse-item">
+                                    <button class="btn collapse-button" type="button" data-toggle="collapse"
+                                            data-target="#thegame" aria-expanded="true">
+                                        <span>
+                                            <i class="fas fa-search"></i>
+                                            Thẻ game
+                                        </span>
+                                        <i class="fas fa-angle-down"></i>
+                                    </button>
+                                    <div class="collapse show active" id="thegame">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <a href=""><i class="fas fa-angle-right"></i>Thẻ Garena</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href=""><i class="fas fa-angle-right"></i>Thẻ Appota</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href=""><i class="fas fa-angle-right"></i>Thẻ Zing</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    <i class="fas fa-angle-right"></i>Thẻ Vcoin
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href=""><i class="fas fa-angle-right"></i>Thẻ Gate</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href=""><i class="fas fa-angle-right"></i>Thẻ Cà Rốt</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href=""><i class="fas fa-angle-right"></i>Thẻ Funcard</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href=""><i class="fas fa-angle-right"></i>Thẻ Steam</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 order-md-2 order-1">
+                            <div class="card-price_item">
+                                <div class="row row-g3">
+                                    <div class="col-6">
+                                        <div class="price-item_button">
+                                            <span class="name">Viettel</span>
+                                            <span class="price">10.000đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="price-item_button active">
+                                            <span class="name">Viettel</span>
+                                            <span class="price">20.000đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="price-item_button">
+                                            <span class="name">Viettel</span>
+                                            <span class="price">30.000đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="price-item_button">
+                                            <span class="name">Viettel</span>
+                                            <span class="price">50.000đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="price-item_button">
+                                            <span class="name">Viettel</span>
+                                            <span class="price">100.000đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="price-item_button">
+                                            <span class="name">Viettel</span>
+                                            <span class="price">200.000đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="price-item_button">
+                                            <span class="name">Viettel</span>
+                                            <span class="price">300.000đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="price-item_button">
+                                            <span class="name">Viettel</span>
+                                            <span class="price">500.000đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="price-item_button">
+                                            <span class="name">Viettel</span>
+                                            <span class="price">1.000.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 order-md-3 order-2 mt-3 mt-md-0">
+                            <div class="price-wallet">
+                                <div class="price-wallet_item">
+                                    <div class="price-wallet_item__text">Số dư</div>
+                                    <div class="price-wallet_item__value">99.100.154 đ</div>
+                                </div>
+                                <div class="price-wallet_item"
+                                     style="margin-top:30px;padding-top: 30px; border-top: 1px solid #e9e9e9">
+                                    <div class="price-wallet_item__text">Giao dịch trong ngày</div>
+                                    <div class="price-wallet_item__value">100.154 đ</div>
+                                </div>
+                                <div class="price-wallet_item">
+                                    <div class="price-wallet_item__text">Theo mệnh giá</div>
+                                    <div class="price-wallet_item__value">0</div>
+                                </div>
+                            </div>
+                            <div class="card card-cart overflow-hidden mt-4" id="shopping-cart-wrapper">
+                                <div class="card-header py-2 px-3">
+                                    <div class="card-title mb-0 d-flex align-items-center justify-content-between">
+                                        Giỏ hàng
+                                        <span>
+                                            <i class="fal fa-shopping-basket"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-2 pb-4 px-3 bg-white">
+                                    <div class="d-none text-danger py-2 h6 font-weight-bold text-center mb-0">
+                                        Giỏ hàng đang trống
+                                    </div>
+                                    <form action="" class="section-cart">
+                                        <div class="item">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6 col-12">
+                                                    <div class="cart-name d-flex align-items-center">
+                                                        Viettel
+                                                        <div class="cart-price text-left ml-1">
+                                                            1.000.000đ
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart-percent text-muted">
+                                                        Chiết khấu: 2%
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12 mt-3 mt-md-0">
+                                                    <div class="d-flex align-items-center justify-content-md-end">
+                                                        <div class="cart-quantity">
+                                                            <input type="text" class="input-quantity quantity" min="1"
+                                                                   value="1">
+                                                            <button class="button-quantity button-quantity_up"
+                                                                    data-type="1">
+                                                                <i class="fal fa-angle-up"></i>
+                                                            </button>
+                                                            <button class="button-quantity button-quantity_down"
+                                                                    disabled="" data-type="0">
+                                                                <i class="fal fa-angle-down"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="cart-price ml-auto ml-md-4">
+                                                            980.000đ
+                                                        </div>
+                                                        <a href="javascript:void(0)"
+                                                           class="cart-delete flex-shrink-0 ml-3 delCart">
+                                                            <i class="fal fa-times"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6 col-12">
+                                                    <div class="cart-name d-flex align-items-center">
+                                                        Viettel
+                                                        <div class="cart-price text-left ml-1">
+                                                            1.000.000đ
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart-percent text-muted">
+                                                        Chiết khấu: 2%
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12 mt-3 mt-md-0">
+                                                    <div class="d-flex align-items-center justify-content-md-end">
+                                                        <div class="cart-quantity">
+                                                            <input type="text" class="input-quantity quantity" min="1"
+                                                                   value="1">
+                                                            <button class="button-quantity button-quantity_up"
+                                                                    data-type="1">
+                                                                <i class="fal fa-angle-up"></i>
+                                                            </button>
+                                                            <button class="button-quantity button-quantity_down"
+                                                                    disabled="" data-type="0">
+                                                                <i class="fal fa-angle-down"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="cart-price ml-auto ml-md-4">
+                                                            980.000đ
+                                                        </div>
+                                                        <a href="javascript:void(0)"
+                                                           class="cart-delete flex-shrink-0 ml-3 delCart">
+                                                            <i class="fal fa-times"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="total">
+                                            <div class="row row-5 align-items-center">
+                                                <div class="col-6">
+                                                    <div class="cart-total">
+                                                        Tổng tiền:
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card-total-value">
+                                                        50.000 đ
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info form-inner">
+                                            <div class="form-group mb-4">
+                                                <label for="email" class="font-weight-bold">Email:</label>
+                                                <input type="email" class="form-control" id="email"
+                                                       placeholder="xxxxxxx@gmail.com">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label for="code" class="font-weight-bold">Phương thức thanh
+                                                    toán</label>
+                                                <div class="d-flex align-items-center flex-wrap">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" id="1" class="custom-control-input">
+                                                        <label class="custom-control-label" for="1">Techcombank</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" id="2" class="custom-control-input">
+                                                        <label class="custom-control-label" for="2">Vietcombank</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" id="3" class="custom-control-input">
+                                                        <label class="custom-control-label" for="3">BIDV</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="text-muted">
+                                                    Bằng việc chọn 'Thanh toán', bạn đồng ý với
+                                                    <a href="" class="color-main">chính
+                                                        sách cung cấp, hủy và hoàn trả dịch vụ
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="form-group text-center mb-0 mt-4">
+                                                <button class="btn btn-primary btn-send_card waves-light waves-effect">
+                                                    <i class="fas fa-shopping-bag"></i>
+                                                    Thanh toán
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-item">
+                                <div class="footer-item_text">
+                                    CÔNG TY TNHH NETPAY
+                                </div>
+                                <div class="footer-item_link">
+                                    Hotline:
+                                    <a href="tel:1900 1565">1900 1565</a>
+                                </div>
+                                <div class="footer-item_link">
+                                    Email:
+                                    <a href="mailto:nguyennghia@nencer.net">nguyennghia@nencer.net</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-6">
+                            <div class="footer-item">
+                                <div class="footer-item_text footer-item_decor">
+                                    CHÍNH SÁCH
+                                </div>
+                                <ul class="footer-item_list">
+                                    <li>
+                                        <a href="">Về chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Chính sách bảo mật</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Về chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Chính sách bảo mật</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-6">
+                            <div class="footer-item">
+                                <div class="footer-item_text footer-item_decor">
+                                    HƯỚNG DẪN
+                                </div>
+                                <ul class="footer-item_list">
+                                    <li>
+                                        <a href="">Về chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Chính sách bảo mật</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Về chúng tôi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-item">
+                                <div class="footer-item_text footer-item_decor">
+                                    CỘNG ĐỒNG
+                                </div>
+                                <ul class="list-unstyled mb-0 footer-item_social">
+                                    <li class="facebook">
+                                        <a href="https://www.facebook.com/">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="telegram">
+                                        <a href="https://telegram.com/">
+                                            <i class="fab fa-telegram-plane"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="https://twitter.com/">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="youtube">
+                                        <a href="https://www.youtube.com/">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#" class="footer-bottom_copyright">Software by Nencer Jsc.,</a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <a href="#" class="footer-bottom_link">English</a>
+                            <a href="#" class="footer-bottom_link active">Tiếng việt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/select2/js/select2.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>
