@@ -813,16 +813,6 @@ body {
         position: static;
     }
 
-    .header .header-inner .header-inner_logo .header-inner_mobile__user {
-        /*position: absolute;*/
-        /*top: 50%;*/
-        /*right: 0;*/
-        /*-webkit-transform: translateY(-50%);*/
-        /*-ms-transform: translateY(-50%);*/
-        /*transform: translateY(-50%);*/
-        /*z-index: 200;*/
-    }
-
     .header .header-inner .header-inner_logo .header-inner_mobile__user > a {
         display: inline-block;
         font-weight: 400;
@@ -840,6 +830,7 @@ body {
         border: 1px solid #004b7f;
         font-size: .9em;
         padding: 4px 10px;
+        white-space: nowrap;
     }
 
     .header .header-inner .header-inner_logo .header-inner_mobile__user .header-mobile_user__inner {
@@ -953,6 +944,11 @@ body {
     font-size: 2.5em;
     color: var(--dark-color);
     font-weight: 700;
+}
+
+.section-heading .section-heading_desc {
+    line-height: 1.6;
+    margin-top: 15px;
 }
 
 @media screen and (max-width: 991px) {
@@ -1441,6 +1437,22 @@ body {
     color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+    .section-category .category-inner .category-inner_item {
+        flex-direction: column;
+    }
+
+    .section-category .category-inner .category-inner_item .category-image {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .section-category .category-inner .category-inner_item .category-detail {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
 .sidebar .sidebar-title {
     font-size: 1.3em;
     font-weight: 600;
@@ -1554,4 +1566,48 @@ body {
 .section-detail .detail-main .detail-content h6 {
     font-weight: 600;
     font-size: 1em;
+}
+
+.section-price {
+    padding: 20px 0;
+}
+
+.section-price .price-inner .price-inner_tab .nav-tabs .nav-item .nav-link {
+    color: #333;
+    padding: .75rem 1.5rem;
+    font-size: 1.05em;
+}
+
+.section-price .price-inner .price-inner_tab .nav-tabs .nav-item .nav-link.active {
+    font-weight: 700;
+}
+
+.section-price .price-inner .price-inner_content .table thead th {
+    border-bottom: 0;
+    background: #f6f6f6;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.section-price .price-inner .price-inner_content .table thead th,
+.section-price .price-inner .price-inner_content .table thead td,
+.section-price .price-inner .price-inner_content .table tbody th,
+.section-price .price-inner .price-inner_content .table tbody td {
+    padding: 1rem;
+}
+
+.section-price .price-inner .price-inner_content .table tbody tr {
+    transition: var(--transition);
+}
+
+.section-price .price-inner .price-inner_content .table .text-title {
+    font-size: 15px;
+}
+
+.section-price .price-inner .price-inner_content .table tbody tr:hover {
+    background: #f6f6f6;
+}
+
+.section-price .price-inner .price-inner_content .table tbody td[rowspan] {
+    background: #fff;
 }
