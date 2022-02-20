@@ -1104,6 +1104,7 @@ body {
     display: block;
     margin: 0 auto;
     object-fit: contain;
+    max-width: 100%;
 }
 
 .service-card .card-body {
@@ -1155,26 +1156,81 @@ body {
 
 .article-card {
     height: 100%;
+    transition: var(--transition);
+    box-shadow: 0 5px 30px -10px rgba(4, 116, 183, 0.3) !important;
 }
 
 .article-card .card-header img {
     max-height: 130px;
+    transition: var(--transition);
 }
 
 .article-card .card-body {
     padding: .5rem .65rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-card .card-body .card-meta {
+    color: #838383;
+    font-size: 13px;
+    margin-bottom: 10px;
 }
 
 .article-card .card-body .card-title {
     font-size: 1.1em;
     font-weight: 700;
     color: var(--dark-color);
-    margin-bottom: .5rem;
+    margin-bottom: 15px;
     transition: var(--transition);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.article-card .card-body .card-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 1em;
+    color: #6a6a6a;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.article-card .card-body .card-link {
+    color: #1e4691;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.article-card .card-body .card-link i {
+    transition: var(--transition);
+    line-height: 0;
+    margin-left: 4px;
+}
+
+.article-card:hover {
+    box-shadow: 0 5px 20px -5px rgba(6, 106, 166, 0.6) !important;
+}
+
+.article-card:hover .card-header img {
+    opacity: .7;
 }
 
 .article-card:hover .card-body .card-title {
     color: #1e4691;
+}
+
+.article-card:hover .card-body .card-link i {
+    margin-left: 10px;
 }
 
 .section-partner {
@@ -1975,6 +2031,7 @@ body {
     .section-cart .cart-quantity {
         width: 50%;
     }
+
     .section-cart .cart-quantity .input-quantity {
         max-width: 100%
     }
