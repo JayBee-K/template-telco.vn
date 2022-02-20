@@ -1105,6 +1105,7 @@ body {
     border-radius: 8px;
     height: 100%;
     padding: 30px;
+    transition: var(--transition);
 }
 
 .service-card .card-header img {
@@ -1112,6 +1113,7 @@ body {
     margin: 0 auto;
     object-fit: contain;
     max-width: 100%;
+    transition: var(--transition);
 }
 
 .service-card .card-body {
@@ -1122,7 +1124,7 @@ body {
 .service-card .card-body .card-title {
     color: var(--dark-color);
     font-weight: 600;
-    font-size: 1.7em;
+    font-size: 1.6em;
     margin-bottom: 10px;
 }
 
@@ -1145,6 +1147,18 @@ body {
 
 .service-card .card-body .card-link i {
     font-size: 14px;
+}
+
+.service-card:hover {
+    box-shadow: 0 5px 20px -5px rgb(6 106 166 / 60%) !important;
+}
+
+.service-card:hover .card-header img {
+    transform: scale(1.05);
+}
+
+.service-card:hover .card-body .card-title {
+    color: #1e4691;
 }
 
 .service-card:hover .card-body .card-link {
