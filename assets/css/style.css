@@ -1413,6 +1413,26 @@ body {
     margin-left: 8px;
 }
 
+.footer .footer-top .footer-apps {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-top .footer-apps a {
+    display: inline-block;
+}
+
+.footer .footer-top .footer-apps a img {
+    height: 30px;
+    max-width: 100%;
+    width: auto;
+}
+
+.footer .footer-top .footer-apps a + a {
+    margin-left: 10px;
+}
+
 .section-breadcrumb {
     background: #f7f5f2;
 }
@@ -2060,6 +2080,10 @@ body {
     .section-cart .cart-quantity .input-quantity {
         max-width: 100%
     }
+}
+
+.section-why {
+    padding: 80px 0;
 }
 
 .why-item {
