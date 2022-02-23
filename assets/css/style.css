@@ -316,25 +316,29 @@ body {
 }
 
 .header .header-inner .header-inner_user .header-inner_user__item .btn-register {
-    background-color: #fd8a10;
-    border-color: #fd8a10;
+    background-color: #feb364;
+    border-color: #feb364;
     margin: 10px 0 10px 10px;
+    -webkit-box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%) !important;
+    box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%) !important;
 }
 
 .header .header-inner .header-inner_user .header-inner_user__item .btn-register:before {
-    background-color: #ed800c;
-    border-color: #ed800c;
+    background-color: #eda14d;
+    border-color: #eda14d;
 }
 
 .header .header-inner .header-inner_user .header-inner_user__item .btn-login {
-    background: #004b7f;
-    border-color: #004b7f;
+    background: #2fa8fc;
+    border-color: #2fa8fc;
     margin: 10px 0 10px 10px;
+    -webkit-box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%) !important;
+    box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%) !important;
 }
 
 .header .header-inner .header-inner_user .header-inner_user__item .btn-login::before {
-    background: #045c99;
-    border-color: #045c99;
+    background: #2090df;
+    border-color: #2090df;
 }
 
 .header .header-inner .header-inner_user .header-inner_user__item .btn-login-outline {
