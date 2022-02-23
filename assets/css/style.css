@@ -316,8 +316,7 @@ body {
 }
 
 .header .header-inner .header-inner_user .header-inner_user__item .btn-register {
-    background-color: #feb364;
-    border-color: #feb364;
+    background: #fff;
     margin: 10px 0 10px 10px;
     -webkit-box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%) !important;
     box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%) !important;
@@ -328,17 +327,36 @@ body {
     border-color: #eda14d;
 }
 
+.header .header-inner .header-inner_user .header-inner_user__item .btn-register span {
+    color: #9d6121;
+    font-weight: 700;
+    font-size: 1.05em;
+}
+
+.header .header-inner .header-inner_user .header-inner_user__item .btn-register:hover span {
+    color: #fff;
+}
+
 .header .header-inner .header-inner_user .header-inner_user__item .btn-login {
-    background: #2fa8fc;
-    border-color: #2fa8fc;
+    background: #fff;
     margin: 10px 0 10px 10px;
     -webkit-box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%) !important;
     box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%) !important;
 }
 
+.header .header-inner .header-inner_user .header-inner_user__item .btn-login > span {
+    color: #0e4d79;
+    font-weight: 700;
+    font-size: 1.05em;
+}
+
 .header .header-inner .header-inner_user .header-inner_user__item .btn-login::before {
     background: #2090df;
     border-color: #2090df;
+}
+
+.header .header-inner .header-inner_user .header-inner_user__item .btn-login:hover > span {
+    color: var(--white);
 }
 
 .header .header-inner .header-inner_user .header-inner_user__item .btn-login-outline {
