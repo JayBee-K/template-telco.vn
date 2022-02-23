@@ -28,7 +28,7 @@
 	</style>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
 		  rel="stylesheet">
 	<link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
@@ -54,9 +54,11 @@
 							</button>
 						</div>
 						<div id="user-mobile" class="header-inner_mobile__user d-block d-lg-none">
-							<a id="call-user_mobile" href="javascript:void(0)">
-								<i class="fas fa-user"></i>
-								Tài khoản
+							<a id="call-user_mobile" class="btn-customize" href="javascript:void(0)">
+								<span>
+									<i class="fas fa-user"></i>
+									Tài khoản
+								</span>
 							</a>
 							<div class="header-mobile_user__inner">
 								<ul class="list-unstyled mb-0">
@@ -129,28 +131,34 @@
 							</ul>
 						</div>
 						<div class="header-inner_user d-lg-flex align-items-center justify-content-end">
-							<div class="header-inner_user__item d-none">
-								<a href="dang-ky.html" class="btn btn-register">
-									<i class="fas fa-user mr-1"></i>
-									Đăng ký
-								</a>
-							</div>
-							<div class="header-inner_user__item d-none">
-								<a href="javascript:void(0)" class="btn btn-login">
-									<i class="fas fa-lock-alt mr-1"></i>
-									Đăng nhập
+							<div class="header-inner_user__item">
+								<a href="dang-ky.html" class="btn btn-register btn-customize">
+									<span>
+										<i class="fas fa-user mr-1"></i>
+										Đăng ký
+									</span>
 								</a>
 							</div>
 							<div class="header-inner_user__item">
+								<a href="javascript:void(0)" class="btn btn-login btn-customize">
+									<span>
+										<i class="fas fa-lock-alt mr-1"></i>
+										Đăng nhập
+									</span>
+								</a>
+							</div>
+							<div class="header-inner_user__item d-none">
 								<span>
 									<i class="far fa-money-bill-alt mr-1"></i>
 									199.999 đ
 								</span>
 							</div>
-							<div class="header-inner_user__item">
-								<a href="javascript:void(0)" class="btn btn-login-outline">
-									<i class="fas fa-user mr-1"></i>
-									Tester
+							<div class="header-inner_user__item d-none">
+								<a href="javascript:void(0)" class="btn btn-login-outline btn-customize">
+									<span>
+										<i class="fas fa-user mr-1"></i>
+										Tester
+									</span>
 								</a>
 								<ul class="list-unstyled mb-0">
 									<li>
@@ -201,10 +209,10 @@
 </header>
 
 <div class="main">
-	<div class="section-banner">
+	<div class="section-banner" style="background: linear-gradient(150deg,#ea3023 15%,#ca1e14 70%,#92150d 94%);">
 		<div class="swiper" id="slideBanner">
 			<div class="swiper-wrapper">
-				<div style="background-color: var(--primary-color);" class="swiper-slide">
+				<div class="swiper-slide">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-md-6 order-2 order-md-1">
@@ -232,7 +240,7 @@
 						</div>
 					</div>
 				</div>
-				<div style="background-color: var(--primary-color);" class="swiper-slide">
+				<div class="swiper-slide">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-md-6 order-2 order-md-1">
@@ -259,7 +267,7 @@
 						</div>
 					</div>
 				</div>
-				<div style="background-color: var(--primary-color);" class="swiper-slide">
+				<div class="swiper-slide">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-md-6 order-2 order-md-1">
@@ -287,7 +295,7 @@
 						</div>
 					</div>
 				</div>
-				<div style="background-color: var(--primary-color);" class="swiper-slide">
+				<div class="swiper-slide">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-md-6 order-2 order-md-1">
@@ -734,6 +742,11 @@
 		</div>
 	</div>
 </footer>
+
+<script>
+	let _page = 'home';
+</script>
+
 <script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
 		src="./assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
