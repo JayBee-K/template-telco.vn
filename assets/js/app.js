@@ -99,6 +99,13 @@ const slideBanner = function () {
 	});
 }
 
+const toggleActiveTabs = function () {
+	$('#collapse-theme .nav-item .nav-link').on('shown.bs.tab', function (e) {
+		$('#collapse-theme .nav-item .nav-link').removeClass('active');
+		$(this).addClass('active');
+	})
+}
+
 $(function () {
 	console.log(_page);
 	if (_page.length > 0 && _page == 'page') {
@@ -110,4 +117,5 @@ $(function () {
 	navigationMobile();
 	userMobile();
 	clickOverlayMobile();
+	toggleActiveTabs();
 });

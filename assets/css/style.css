@@ -2084,6 +2084,10 @@ body {
     transform: rotate(180deg);
 }
 
+.collapse-inner .collapse-item .list-group {
+    border-radius: 0;
+}
+
 .collapse-inner .collapse-item .list-group-item {
     border-left: 0;
     border-right: 0;
@@ -2095,6 +2099,9 @@ body {
     display: block;
     padding: 10px 15px;
     color: #444;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
 }
 
 .collapse-inner .collapse-item .list-group-item > a > i {
@@ -2102,6 +2109,7 @@ body {
     margin-right: 8px;
 }
 
+.collapse-inner .collapse-item .list-group-item > a.active,
 .collapse-inner .collapse-item .list-group-item > a:hover {
     background: #f6f6f6;
     color: var(--primary-color);
